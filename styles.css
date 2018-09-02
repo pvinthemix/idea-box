@@ -66,4 +66,19 @@ h1 {
 }
 
 
+.up-vote-button{
+
+background-image:url(Images/upvote.svg);
+height:2rem;
+width: 2rem;
+
+}
+
+
+.down-vote-button{
+background-image: url(Images/downvote.svg);
+height:2rem;
+width:2rem;
+
+
 }
