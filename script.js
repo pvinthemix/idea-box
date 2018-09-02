@@ -40,4 +40,13 @@ function deleteCard(event) {
  }
 }
 
+// function disableButtons() {
+//   if(titleInput.value === "" || bodyInput.value=== "") {
+//     saveButton.disabled = true;
+//     } else {
+//       saveButton.disabled = false;
+//     }
+//   }
+
+
 
