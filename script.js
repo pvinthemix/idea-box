@@ -14,16 +14,17 @@ saveButton.on('click', createIdeaList);
 function createIdeaList() {
   event.preventDefault();
   newIdeaContainer.prepend(
-    `<div class="single-idea-container">
-      <div class="user-title">
+    `<div class="js-single-idea-container">
+      <div class="js-user-title">
         <h2>${titleInput.val()}</h2>
+        <button class ="js-delete-svg"></button>
       </div>
-      <div class="user-body">
+      <div class="js-user-body">
         <p>${bodyInput.val()}</p>
       </div>
       <div>
-        <button class="up-vote-button"></button>
-        <button class="down-vote-button"></button>
+        <button class="js-up-vote-button"></button>
+        <button class="js-down-vote-button"></button>
       </div>
     </div>`)
     clearInputs();

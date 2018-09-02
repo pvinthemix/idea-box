@@ -53,32 +53,43 @@ h1 {
   color: #00A79D;
 }
 
-.single-idea-container {
+.js-single-idea-container {
   width: 44%;
   margin-left: auto;
   margin-right: auto;
 
 }
 
-.new-idea-container {
-  text-decoration: underline;
 
-}
-
-
-.up-vote-button{
+.js-up-vote-button{
 
 background-image:url(Images/upvote.svg);
 height:2rem;
 width: 2rem;
 
+
 }
 
 
-.down-vote-button{
+.js-down-vote-button{
 background-image: url(Images/downvote.svg);
 height:2rem;
 width:2rem;
 
 
+}
+
+
+
+.js-delete-svg{
+background-image: url(Images/delete.svg);
+height: 2rem;
+width: 2rem;
+
+
+
+}
+
+.user-title{
+  display: inline;
 }
