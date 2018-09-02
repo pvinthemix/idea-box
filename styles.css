@@ -57,39 +57,33 @@ h1 {
   width: 44%;
   margin-left: auto;
   margin-right: auto;
-
 }
 
 
-.js-up-vote-button{
-
-background-image:url(Images/upvote.svg);
-height:2rem;
-width: 2rem;
-
-
+.js-up-vote-button {
+  background-image:url(Images/upvote.svg);
+  border-style: none;
+  height:2rem;
+  width: 2rem;
 }
 
 
-.js-down-vote-button{
-background-image: url(Images/downvote.svg);
-height:2rem;
-width:2rem;
-
-
+.js-down-vote-button {
+  background-image: url(Images/downvote.svg);
+  height:2rem;
+  width:2rem;
+  border-style: none;
 }
 
 
 
-.js-delete-svg{
-background-image: url(Images/delete.svg);
-height: 2rem;
-width: 2rem;
-
-
-
+.js-delete-button {
+  background-image: url(Images/delete.svg);
+  height: 2rem;
+  width: 2rem;
+  border-style: none;
 }
 
-.user-title{
+.js-user-title {
   display: inline;
 }
