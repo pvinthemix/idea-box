@@ -39,6 +39,10 @@ h1 {
   font-weight: 700;
 }
 
+.search-input {
+  margin-top: 1em;
+}
+
 .save-button {
   background-color: #00A79D;
   color: #FFFFFF;
