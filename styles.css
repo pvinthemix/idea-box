@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #E5F3F2;
+  font-family: 'Roboto Slab';
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+h1 {
+  color: #6D6E71;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.title-input, 
+.body-input, 
+.save-button,
+.search-input {
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  margin-bottom: 2rem;
+  width: 44%;
+  height: 3rem;
+  font-size: 1.2em;
+  padding: .5em;
+  border: 2px solid #939598;
+}
+
+.title-input::placeholder, 
+.body-input::placeholder,
+.search-input::placeholder {
+  color: #939598;
+  font-weight: 700;
+}
+
+.save-button {
+  background-color: #00A79D;
+  color: #FFFFFF;
+
+}
+
+.idea-title-color {
+  color: #00A79D;
+}
+
+
+}
