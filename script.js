@@ -22,24 +22,20 @@ function createIdeaList() {
         <p>${bodyInput.val()}</p>
       </div>
       <div>
-        <button>delete</button>
-        <button>hello</button>
+        <button class="up-vote-button"></button>
+        <button class="down-vote-button"></button>
       </div>
     </div>`)
+    clearInputs();
 };
 
 
 
-// $(".save-button").on("click",function(e){
-//   event.preventDefault();
-//   var title = $('.title-input').val();
-//   var body  = $('body-input').val();
-
-// }
-// );
-
-// $('new-idea-container').prepend(`<section>
+function clearInputs(){
+titleInput.val("");
+bodyInput.val("");
+}
 
 
 
-//   </section>`)
+
