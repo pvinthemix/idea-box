@@ -75,7 +75,8 @@ h1 {
   border-style: none;
   height:2rem;
   width: 2rem;
-  display: inline-block;
+  margin-right: 10px;
+  
 }
 
 .js-down-vote-button {
@@ -83,7 +84,9 @@ h1 {
   height:2rem;
   width:2rem;
   border-style: none;
-  display: inline-block;
+  margin-right: 4%;
+  
+
 }
 
 .js-delete-button {
@@ -91,13 +94,7 @@ h1 {
   height: 2rem;
   width: 2rem;
   border-style: none;
-  display: inline-block;
-
-}
-
-.js-quality-controls {
-  display: flex;
-  justify-content: space-between;
+  
 
 }
 
@@ -110,11 +107,11 @@ h1 {
 
 .js-quality-control {
   margin-bottom: 3%;
+  display: flex;
 }
 
 .js-quality {
-  /*float: right;*/
-  margin-right: 63%;
+  margin-left: 1%;
   margin-top: 4px;
 }
 
