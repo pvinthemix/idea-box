@@ -1,3 +1,5 @@
+
+
 var titleInput        = $('.title-input');
 var bodyInput         = $('.body-input');
 var saveButton        = $('.save-button');
@@ -10,17 +12,21 @@ function createIdeaList() {
   event.preventDefault();
   newIdeaContainer.prepend(
     `<div class="js-single-idea-container">
-      <div class="js-user-title">
-        <h2>${titleInput.val()}</h2>
+
+      <div class="js-user-title-container">
+        <h2 class= "js-user-title-text">${titleInput.val()}</h2>
         <button class ="js-delete-button"></button>
       </div>
-      <div class="js-user-body">
-        <p>${bodyInput.val()}</p>
-      </div>
-      <div>
+
+      <div class="js-user-body-container">
+        <p class="js-user-body-text">${bodyInput.val()}</p>
+        <br>
         <button class="js-up-vote-button"></button>
         <button class="js-down-vote-button"></button>
+        <br>
+        <p class="js-quality">quality: swill</p>
       </div>
+
       <hr>
     </div>`)
   var deleteButton = $('.js-delete-button');

@@ -59,6 +59,14 @@ h1 {
   margin-right: auto;
 }
 
+.js-user-title-container {
+  display: inline-block;
+/*  justify-content: space-between;
+*/}
+
+.js-user-body-container {
+  display: flex;
+}
 
 .js-up-vote-button {
   background-image:url(Images/upvote.svg);
@@ -67,7 +75,6 @@ h1 {
   width: 2rem;
 }
 
-
 .js-down-vote-button {
   background-image: url(Images/downvote.svg);
   height:2rem;
@@ -75,15 +82,16 @@ h1 {
   border-style: none;
 }
 
-
-
 .js-delete-button {
   background-image: url(Images/delete.svg);
   height: 2rem;
   width: 2rem;
   border-style: none;
+  display: inline-block;
+
 }
 
-.js-user-title {
-  display: inline;
+.js-quality {
+  display: block;
 }
+
