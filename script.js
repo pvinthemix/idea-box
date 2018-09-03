@@ -19,12 +19,14 @@ function createIdeaList() {
       </div>
 
       <div class="js-user-body-container">
-        <p class="js-user-body-text">${bodyInput.val()}</p>
-        <br>
-        <button class="js-up-vote-button"></button>
-        <button class="js-down-vote-button"></button>
-        <br>
-        <p class="js-quality">quality: swill</p>
+        <div class="js-user-body-text">
+          <p>${bodyInput.val()}</p>
+        </div>
+        <div class="js-quality-control">
+          <button class="js-up-vote-button"></button>
+          <button class="js-down-vote-button"></button>
+          <p class="js-quality">quality: swill</p>
+         </div> 
       </div>
 
       <hr>
