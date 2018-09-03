@@ -38,7 +38,7 @@ function createIdeaList() {
   var upVoteButton = $('.js-up-vote-button')
   upVoteButton.on('click', changeQualityUp)
   var downVoteButton = $('.js-down-vote-button')
-  downVoteButton.on('click', chaneQualityDown)
+  downVoteButton.on('click', changeQualityDown)
   clearInputs();
 };
 
@@ -56,7 +56,7 @@ function deleteCard(event) {
 
 function changeQualityUp() {
   var siblings = event.target.parentElement.childNodes;
-  console.log(siblings);
+  // console.log(siblings);
   for (var i = 0; i < siblings.length; i++){
     if(siblings[i].nodeName !== "#text"){
       if (siblings[i].classList.contains('js-quality')){
@@ -71,21 +71,15 @@ function changeQualityUp() {
 }
 
 
-function chaneQualityDown(){
-var $downVoteButton = $(event.target)
-var siblings = $downVoteButton.siblings()
-  for (var=i; i<siblings.length; i++){
-    if (siblings[i].contains('js-quality')) {
-      if (siblings[i].innerText === 'quality: genius')
-    }
-
-
-}
-
-
-
-
-
+function changeQualityDown(){
+  var $downVoteButton = $(event.target)
+  var qualityElement = $downVoteButton.siblings('.js-quality')[0];
+  var qualityText = $(qualityElement).text()
+    if (qualityText === 'quality: genius') {
+      $(qualityElement).text('quality: plausible');
+    } else {
+      $(qualityElement).text('quality: swill');
+  }
 }
 
 
