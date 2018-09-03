@@ -54,36 +54,67 @@ h1 {
 }
 
 .js-single-idea-container {
-  width: 44%;
+  width: 43%;
   margin-left: auto;
   margin-right: auto;
 }
 
+.js-user-title-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3%;
+  margin-top: 5%;
+}
+
+.js-user-body-container {
+ 
+}
 
 .js-up-vote-button {
   background-image:url(Images/upvote.svg);
   border-style: none;
   height:2rem;
   width: 2rem;
+  display: inline-block;
 }
-
 
 .js-down-vote-button {
   background-image: url(Images/downvote.svg);
   height:2rem;
   width:2rem;
   border-style: none;
+  display: inline-block;
 }
-
-
 
 .js-delete-button {
   background-image: url(Images/delete.svg);
   height: 2rem;
   width: 2rem;
   border-style: none;
+  display: inline-block;
+
 }
 
-.js-user-title {
-  display: inline;
+.js-quality-controls {
+  display: flex;
+  justify-content: space-between;
+
 }
+
+.js-user-body-text {
+  display: flex;
+  margin-bottom: 3%;
+  margin-left: .5%;
+
+}
+
+.js-quality-control {
+  margin-bottom: 3%;
+}
+
+.js-quality {
+  /*float: right;*/
+  margin-right: 63%;
+  margin-top: 4px;
+}
+
