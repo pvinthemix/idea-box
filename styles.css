@@ -66,9 +66,9 @@ h1 {
   margin-top: 5%;
 }
 
-.js-user-body-container {
+/*.js-user-body-container {
  
-}
+}*/
 
 .js-up-vote-button {
   background-image:url(Images/upvote.svg);
@@ -113,5 +113,22 @@ h1 {
 .js-quality {
   margin-left: 1%;
   margin-top: 4px;
+}
+
+@media screen and (max-width: 568px) {
+
+.title-input, 
+.body-input, 
+.save-button,
+.search-input {
+  width: 60%;
+}
+
+.js-single-idea-container {
+  width: 59%;
+  
+}
+
+
 }
 
