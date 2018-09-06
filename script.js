@@ -35,7 +35,7 @@ function createIdeaList() {
   clearInputs();
 };
 
-function addCardToPage(cardHTML){
+function addCardToPage(cardHTML) {
   newIdeaContainer.prepend(cardHTML);
   var deleteButton = $('.js-delete-button');
   deleteButton.on('click', deleteCard);
@@ -43,12 +43,12 @@ function addCardToPage(cardHTML){
   upVoteButton.on('click', changeQualityUp)
   var downVoteButton = $('.js-down-vote-button')
   downVoteButton.on('click', changeQualityDown)
-}
+};
 
 function clearInputs() {
   titleInput.val("");
   bodyInput.val("");
-}
+};
 
 function deleteCard(event) {
   if (event.target.className === 'js-delete-button') {
@@ -57,9 +57,8 @@ function deleteCard(event) {
     var userTitleElement = $deleteButton.siblings('.js-user-title-text')[0]; 
     var titleText = $(userTitleElement).text();
     deleteFromLocalStorage(titleText);
-
  }
-}
+};
 
 function changeQualityUp() {
   var siblings = event.target.parentElement.childNodes;
@@ -70,11 +69,11 @@ function changeQualityUp() {
           siblings[i].innerText = 'quality: plausible';
         } else {
           siblings[i].innerText = 'quality: genius';
-        }
-      }
-    }
-  }
-}
+        };
+      };
+    };
+  };
+};
 
 function changeQualityDown(){
   var $downVoteButton = $(event.target)
@@ -84,22 +83,21 @@ function changeQualityDown(){
       $(qualityElement).text('quality: plausible');
     } else {
       $(qualityElement).text('quality: swill');
-  }
-}
+  };
+};
 
 function addToLocalStorage(title, cardHTML){
   localStorage.setItem(title, cardHTML); 
-}
+};
 
 function deleteFromLocalStorage(title){
   localStorage.removeItem(title);
-}
+};
 
 function getFromLocalStorage() {
   for (var i = 0; i < localStorage.length; i++) {
     var keyTitle = localStorage.key(i);
     var cardHTML = localStorage.getItem(keyTitle);
     addCardToPage(cardHTML);
-  }
-
-}
+  };
+};

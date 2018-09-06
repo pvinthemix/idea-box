@@ -46,7 +46,6 @@ h1 {
 .save-button {
   background-color: #00A79D;
   color: #FFFFFF;
-
 }
 
 .idea-title-color {
@@ -71,8 +70,7 @@ h1 {
   border-style: none;
   height:2rem;
   width: 2rem;
-  margin-right: 10px;
-  
+  margin-right: 10px; 
 }
 
 .js-down-vote-button {
