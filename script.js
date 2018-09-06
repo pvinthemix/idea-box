@@ -1,5 +1,6 @@
 $(document).ready(getFromLocalStorage);
 
+
 var titleInput        = $('.title-input');
 var bodyInput         = $('.body-input');
 var saveButton        = $('.save-button');
@@ -8,7 +9,6 @@ var newIdeaContainer  = $('.new-idea-container');
 
 
 saveButton.on('click', createIdeaList);
-
 
 function createIdeaList() {
   event.preventDefault();

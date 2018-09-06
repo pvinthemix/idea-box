@@ -66,10 +66,6 @@ h1 {
   margin-top: 5%;
 }
 
-/*.js-user-body-container {
- 
-}*/
-
 .js-up-vote-button {
   background-image:url(Images/upvote.svg);
   border-style: none;
@@ -85,8 +81,6 @@ h1 {
   width:2rem;
   border-style: none;
   margin-right: 4%;
-  
-
 }
 
 .js-delete-button {
@@ -94,8 +88,18 @@ h1 {
   height: 2rem;
   width: 2rem;
   border-style: none;
-  
+}
 
+.js-up-vote-button:hover{
+  background-image: url(Images/upvote-hover.svg);
+}
+
+.js-delete-button:hover{
+  background-image: url(Images/delete-hover.svg);
+}
+
+.js-down-vote-button:hover{
+  background-image: url(Images/downvote-hover.svg);
 }
 
 .js-user-body-text {
@@ -121,12 +125,16 @@ h1 {
 .body-input, 
 .save-button,
 .search-input {
-  width: 60%;
+  width: 85%;
 }
 
 .js-single-idea-container {
-  width: 59%;
+  width: 84%;
   
+}
+
+.body-input {
+  padding: ;
 }
 
 
